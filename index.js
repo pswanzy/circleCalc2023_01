@@ -20,7 +20,7 @@ app.post("/", function(req, res){
 
 // does the computation of the input variables, as numbers
     var areaCircle = Math.PI * Math.pow(radCircle, 2);
-    var volCyl = height * areaCircle;
+    var volCyl = cylHeight * areaCircle;
 
 // sends the results back to the web page as string
   res.send("Volume of the cylinder is  " + volCyl.toFixed(2));
